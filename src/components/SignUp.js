@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Button, Form, Grid, Header, Message, Segment } from 'semantic-ui-react'
 
 
 
@@ -19,12 +19,11 @@ const LoginForm = () => (
     `}</style>
     <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as='h2' color='blue' textAlign='center'>
-          <Image src='' /> Log-in to your account
-        </Header>
+        <Header as='h2' color='blue' textAlign='center'>Sign up! Find a mechanic today!</Header>
         <Form size='large'>
           <Segment stacked>
-            <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
+            <Form.Input fluid icon='user' iconPosition='left' placeholder='Full name' />
+            <Form.Input fluid icon='at' iconPosition='left' placeholder='E-mail' />
             <Form.Input
               fluid
               icon='lock'
@@ -39,7 +38,7 @@ const LoginForm = () => (
           </Segment>
         </Form>
         <Message>
-          New to us? <a href='/signup'>Sign Up</a>
+          Already a member? <a href='/loginForm'>Sign In</a>
         </Message>
       </Grid.Column>
     </Grid>
