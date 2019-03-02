@@ -1,9 +1,11 @@
 import React from 'react'
-import { Menu, Button } from 'semantic-ui-react'
+import { Container, Menu, Button } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 
 const Nav = () => (
-  <Menu compact>
+  
+  <Container>
+  <Menu>
     <Menu.Item as={Link} to='/'>Home</Menu.Item>
     <Menu.Item active>About</Menu.Item>
     <Menu.Item active>Contact</Menu.Item>
@@ -17,6 +19,7 @@ const Nav = () => (
       <Button as={Link} to='loginForm'>Log-in</Button>
     </Menu.Item>
 </Menu>
+</Container>
 )
 
 export default Nav
