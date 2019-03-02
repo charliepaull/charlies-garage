@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import HomepageLayout from "./components/pages/HomepageLayout";
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
 import 'semantic-ui-css/semantic.min.css';
 import LoginForm from "./components/LoginForm";
 import SignUp from "./components/SignUp";
@@ -15,7 +16,8 @@ function App() {
   return (
     <Router>
       <div>
-      <Route exact path="/" component={HomepageLayout} />
+        <Nav />
+      <Route exact path="/" component={Home} />
       <Route exact path="/loginForm" component={LoginForm} />
       <Route exact path="/signup" component={SignUp} />
       {/* <Route exact path="/signup" component={Mechanic} />
