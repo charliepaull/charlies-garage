@@ -98,7 +98,7 @@ class DesktopContainer extends Component {
               secondary={!fixed}
               size='large'
             >
-              <Container>
+              {/* <Container>
                 <Menu.Item as='a' active>
                   Home
                   </Menu.Item>
@@ -113,7 +113,7 @@ class DesktopContainer extends Component {
                     Sign Up
                   </Button>
                 </Menu.Item>
-              </Container>
+              </Container> */}
             </Menu>
             <HomepageHeading />
           </Segment>
