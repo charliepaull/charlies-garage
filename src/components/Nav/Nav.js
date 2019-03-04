@@ -1,25 +1,28 @@
 import React from 'react'
-import { Container, Menu, Button } from 'semantic-ui-react'
+import { Menu, Button, Segment, Icon } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 
 const Nav = () => (
   
-  <Container>
-  <Menu>
-    <Menu.Item as={Link} to='/'>Home</Menu.Item>
-    <Menu.Item active>About</Menu.Item>
-    <Menu.Item active>Contact</Menu.Item>
+  <Segment inverted>
+    <Menu fixed='top' inverted>
+      <Menu.Item as={Link} to='/'> <Icon name='home' />Home</Menu.Item>
+      <Menu.Item active> <Icon name='user' />About</Menu.Item>
+      <Menu.Item active> <Icon name='info' />Contact</Menu.Item>
 
 
-    <Menu.Item position='right'>
-      <Button primary as={Link} to='signup' style={{ marginLeft: '0.5em' }} >Sign up</Button>
-    </Menu.Item>
+      <Menu.Item position='right'>
+        <Button primary as={Link} to='signup' style={{ marginLeft: '0.5em' }} >Sign up</Button>
+      </Menu.Item>
 
-    <Menu.Item>
-      <Button as={Link} to='loginForm'>Log-in</Button>
-    </Menu.Item>
-</Menu>
-</Container>
+      <Menu.Item>
+        <Button as={Link} to='loginForm'>Log-in</Button>
+      </Menu.Item>
+    </Menu>
+  </Segment>
+
+
+
 )
 
 export default Nav

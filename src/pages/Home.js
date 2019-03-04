@@ -52,8 +52,8 @@ const HomepageHeading = ({ mobile }) => (
         fontWeight: 'normal',
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
-    />
-    <Button primary size='huge'>
+    />    
+    <Button as={Link} to='/WorkOrder' primary size='huge'>
       Find a Mechanic
       <Icon name='right arrow' />
     </Button>
