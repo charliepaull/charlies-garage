@@ -1,10 +1,10 @@
 import React from 'react'
-import { Form, Message, Container } from 'semantic-ui-react'
+import { Form, Message, Segment } from 'semantic-ui-react'
 
 
 const WorkOrder = () => (
   <div classnName='work-order'>
- <Container>
+ <Segment>
   <Form>
   <Message info>
     <Message.Header>Was this what you wanted?</Message.Header>
@@ -53,7 +53,7 @@ const WorkOrder = () => (
       Submit
     </Form.Field>
   </Form>
-  </Container>
+  </Segment>
   </div>
 )
 
